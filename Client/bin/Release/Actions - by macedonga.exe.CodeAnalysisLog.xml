@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2019\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="16.0">
+ <Targets>
+  <Target Name="C:\Users\mcecc\OneDrive\Desktop\Actions\Client\bin\Release\Actions - by macedonga.exe">
+   <Modules>
+    <Module Name="actions - by macedonga.exe">
+     <Namespaces>
+      <Namespace Name="Client">
+       <Types>
+        <Type Name="MainForm" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#IsValidImageLink(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Non eliminare gli oggetti più volte" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2020-08-04 12:59:09Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\mcecc\OneDrive\Desktop\Actions\Client" File="MainForm.cs" Line="147">L'oggetto 'stream' può essere eliminato più volte nel metodo 'MainForm.IsValidImageLink(string)'. Per evitare di generare System.ObjectDisposedException, è consigliabile chiamare Dispose su un oggetto non più di una volta.: Lines: 147</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#FirstBoot()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Non eliminare gli oggetti più volte" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2020-08-04 12:59:09Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\mcecc\OneDrive\Desktop\Actions\Client" File="Program.cs" Line="73">L'oggetto 'stream' può essere eliminato più volte nel metodo 'Program.FirstBoot()'. Per evitare di generare System.ObjectDisposedException, è consigliabile chiamare Dispose su un oggetto non più di una volta.: Lines: 73</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Non eliminare gli oggetti più volte" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Non eliminare gli oggetti più volte</Name>
+   <Description>È possibile chiamare più volte un metodo Dispose implementato in modo corretto senza che vengano generate eccezioni. Poiché tuttavia tale risultato non è garantito, per evitare di generare System.ObjectDisposedException è consigliabile chiamare Dispose su un oggetto non più di una volta.</Description>
+   <Resolution Name="Default">L'oggetto {0} può essere eliminato più volte nel metodo {1}. Per evitare di generare System.ObjectDisposedException, è consigliabile chiamare Dispose su un oggetto non più di una volta.: Lines: 73</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="16.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Categoria</String>
+  <String Key="Certainty">Attendibilità</String>
+  <String Key="CollapseAll">Comprimi tutto</String>
+  <String Key="CheckId">ID controllo</String>
+  <String Key="Error">Errore</String>
+  <String Key="Errors">errori</String>
+  <String Key="ExpandAll">Espandi tutto</String>
+  <String Key="Help">Guida</String>
+  <String Key="Line">Riga</String>
+  <String Key="Messages">messaggi</String>
+  <String Key="LocationNotStoredInPdb">[Percorso non archiviato nel PDB]</String>
+  <String Key="Project">Progetto</String>
+  <String Key="Resolution">Risoluzione</String>
+  <String Key="Rule">Regola</String>
+  <String Key="RuleFile">File delle regole</String>
+  <String Key="RuleDescription">Descrizione regola</String>
+  <String Key="Source">Origine</String>
+  <String Key="Status">Stato</String>
+  <String Key="Target">Destinazione</String>
+  <String Key="Warning">Avviso</String>
+  <String Key="Warnings">avvisi</String>
+  <String Key="ReportTitle">Report di analisi codice</String>
+ </Localized>
+</FxCopReport>

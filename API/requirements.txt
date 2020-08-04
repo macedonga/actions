@@ -1,0 +1,5 @@
+flask
+Pillow
+gunicorn
+requests
+mysql-connector-python

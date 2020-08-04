@@ -10,3 +10,5 @@ This is my status.
 For now, only Windows...
 ## Want to add a program to the client?
 Make an issue and I will add it as soon as possible
+## Why does the client require administrator permissions?
+To change the status when a program is opened or closes, the program needs to know when processes start and stop, and to do that, administrator permissions are required

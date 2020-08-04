@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{3998C85A-D114-498D-ADAA-A44EC78D224B}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "API", "API\API.pyproj", "{B3824309-DF7F-4273-8A03-F8433200E21D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3998C85A-D114-498D-ADAA-A44EC78D224B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3998C85A-D114-498D-ADAA-A44EC78D224B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3998C85A-D114-498D-ADAA-A44EC78D224B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3998C85A-D114-498D-ADAA-A44EC78D224B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3824309-DF7F-4273-8A03-F8433200E21D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3824309-DF7F-4273-8A03-F8433200E21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CBA24D0-C464-4F24-BC2D-EE36596395EF}
+	EndGlobalSection
+EndGlobal

@@ -7,7 +7,7 @@ This is my status.
 ## API
 [Endpoints](https://github.com/macedonga/actions/wiki/API-endpoints)
 ## Problems
-- Since GitHub caches everything the status will not be updated in real time.
+- ~~Since GitHub caches everything the status will not be updated in real time.~~**FIXED**
 ## Supported platforms
 For now, only Windows...
 ## Want to add a program to the client?
